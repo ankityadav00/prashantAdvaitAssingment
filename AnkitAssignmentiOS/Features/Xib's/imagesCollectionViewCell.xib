@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="imagesCollectionViewCell" customModule="AnkitAssignmentiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="54" height="69"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="lpS-zB-Rro">
+                        <rect key="frame" x="-13" y="-5.6666666666666643" width="80" height="80.333333333333314"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="KMx-wH-CHZ"/>
+                            <constraint firstAttribute="width" constant="80" id="kwz-ca-eAU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="lpS-zB-Rro" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="I6N-Z7-B75"/>
+                <constraint firstItem="lpS-zB-Rro" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="UbQ-x8-joO"/>
+            </constraints>
+            <size key="customSize" width="54" height="69"/>
+            <connections>
+                <outlet property="imageView" destination="lpS-zB-Rro" id="ITw-qm-AH6"/>
+            </connections>
+            <point key="canvasLocation" x="145.03816793893128" y="34.859154929577464"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Logo" width="80" height="112"/>
+    </resources>
+</document>
